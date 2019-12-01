@@ -10,7 +10,7 @@ export class EmpleadoresComponent implements OnInit {
   constructor(private empleadoresService: EmpleadoresService) {}
 
   public empleadores = [];
-  public headElements = ["id", "nombre", "acciones"];
+  public headElements = ["id", "nombre", "Apellido","Cedula","Direccion","acciones"];
 
   public nombreInput = new FormControl();
   public idInput = new FormControl();
