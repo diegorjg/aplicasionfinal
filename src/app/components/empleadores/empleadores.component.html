@@ -1361,12 +1361,71 @@
             />
             <label for="nombre">Nombre de empleador</label>
           </div>
-          <div class="md-form"><mdb-icon fas="" icon="sticky-note" class="fas prefix" ng-reflect-icon="sticky-note"><i class="fa-sticky-note fas" ng-reflect-klass="fa-sticky-note   " ng-reflect-ng-class="[object Object]"></i></mdb-icon><input class="form-control ng-pristine ng-valid ng-touched" id="apellido" mdbinput="" type="text" ng-reflect-model=""><label for="apellido" class="">Apellido</label></div>
-          <div class="md-form"><mdb-icon fas="" icon="sticky-note" class="fas prefix" ng-reflect-icon="sticky-note"><i class="fa-sticky-note fas" ng-reflect-klass="fa-sticky-note   " ng-reflect-ng-class="[object Object]"></i></mdb-icon><input class="form-control ng-pristine ng-valid ng-touched" id="cedula" mdbinput="" type="text" ng-reflect-model=""><label for="cedula" class="">Cédula</label></div>
-          <div class="md-form"><mdb-icon fas="" icon="sticky-note" class="fas prefix" ng-reflect-icon="sticky-note"><i class="fa-sticky-note fas" ng-reflect-klass="fa-sticky-note   " ng-reflect-ng-class="[object Object]"></i></mdb-icon><input class="form-control ng-pristine ng-valid ng-touched" id="direccion" mdbinput="" type="text" ng-reflect-model=""><label for="direccion" class="">Dirección</label></div>
-          <div class="md-form"><mdb-icon fas="" icon="sticky-note" class="fas prefix" ng-reflect-icon="sticky-note"><i class="fa-sticky-note fas" ng-reflect-klass="fa-sticky-note   " ng-reflect-ng-class="[object Object]"></i></mdb-icon><input class="form-control ng-pristine ng-valid ng-touched" id="correo" mdbinput="" type="text" ng-reflect-model=""><label for="correo" class="">Correo</label></div>
-          <div class="md-form"><mdb-icon fas="" icon="sticky-note" class="fas prefix" ng-reflect-icon="sticky-note"><i class="fa-sticky-note fas" ng-reflect-klass="fa-sticky-note   " ng-reflect-ng-class="[object Object]"></i></mdb-icon><input class="form-control ng-pristine ng-valid ng-touched" id="telefono" mdbinput="" type="text" ng-reflect-model=""><label for="telefono" class="">Teléfono</label></div>
-        </div>
+          <!--Body-->
+<div class="modal-body">
+    <div class="md-form mb-5">
+        <mdb-icon fas icon="sticky-note"></mdb-icon>
+      <input
+        type="text"
+        id="time"
+        class="form-control"
+        mdbInput
+        [formControl]="timeInput"
+      />
+      <label for="time">Apellido</label>
+    </div>
+  
+    <div class="md-form">
+        <mdb-icon fas icon="sticky-note"></mdb-icon>
+      <input
+        type="text"
+        id="subject"
+        class="form-control"
+        mdbInput
+        [formControl]="subjectInput"
+      />
+      <label for="subject">Cédula</label>
+    </div>
+  
+    <div class="md-form mb-5">
+        <mdb-icon fas icon="sticky-note"></mdb-icon>
+      <input
+        type="text"
+        id="location"
+        class="form-control"
+        mdbInput
+        [formControl]="locationInput"
+      />
+      <label for="location">Dirección </label>
+    </div>
+  
+    <div class="md-form">
+      <mdb-icon fas icon="sticky-note"></mdb-icon>
+  
+      <input
+        type="text"
+        id="description"
+        class="form-control"
+        mdbInput
+        [formControl]="descriptionInput"
+      />
+      <label for="description">Correo </label>
+    </div>
+    <div class="md-form">
+        <mdb-icon fas icon="sticky-note"></mdb-icon>
+    
+        <input
+          type="text"
+          id="description"
+          class="form-control"
+          mdbInput
+          [formControl]="descriptionInput"
+        />
+        <label for="description">Teléfono </label>
+      </div>
+  </div>
+  <!--/.Body-->
+
         <div class="modal-footer">
           <button
             type="button"

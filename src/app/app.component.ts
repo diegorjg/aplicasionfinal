@@ -16,3 +16,4 @@ export class AppComponent {
     this.vista = nuevaVista;
   }
 }
+  

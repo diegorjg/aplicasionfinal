@@ -6,6 +6,7 @@ import { UsuariosService } from "../../services/usuarios.service";
   templateUrl: "./usuarios.component.html"
 })
 export class UsuariosComponent implements OnInit {
+  apellidoInput: any;
   constructor(private usuariosService: UsuariosService) {}
 
   public usuarios = [];
@@ -36,6 +37,8 @@ export class UsuariosComponent implements OnInit {
     this.usuarioIndice = null;
     const nuevoUsuario: any = {
       nombre: this.nombreInput || ""
+      
+    
     };
     console.log("click createUsuario === ", { nuevoUsuario });
     this.usuariosService.createUsuario(nuevoUsuario).subscribe(data => {
